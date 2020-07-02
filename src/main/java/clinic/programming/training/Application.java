@@ -6,7 +6,7 @@ import  org.apache.commons.lang3.StringUtils;
 
 public class Application {
 
-    public int coutnWords(String words){
+    public int countWords(String words){
         String[] separatWords = StringUtils.split(words, ' ');
         return (separatWords == null) ? 0: separatWords.length;
     }
@@ -29,7 +29,7 @@ public class Application {
         System.out.println ("Starting Application");
         Application app = new Application();
         app.greet();
-        int count = app.coutnWords("I have four words");
+        int count = app.countWords("I have four words");
         System.out.println("Wor count: "+ count);
     }
 }
